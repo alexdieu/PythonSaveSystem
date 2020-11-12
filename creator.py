@@ -3,7 +3,7 @@ def save(value, file, mode):
         with open(file, "a") as s:
             s.write("\n" + str(value) + "\n")
             s.close()
-    if mode == 0 or mode == '0':
+    elif mode == 0 or mode == '0':
         with open(file, "w") as s :
             s.write(str(value) + "\n")
             s.close()

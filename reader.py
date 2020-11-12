@@ -3,11 +3,16 @@ import os.path
 ussr = []
 
 def scan(stra):
+    dff = None
     for stre in stra:
         if stre.isspace() or stre == "" or stre == None:
             pass
         else:
-            if exec(stre) == None:
+            try:
+                dff = exec(stre)
+            except:
+                pass
+            if dff == None:
                 ussr.append(stre)
             else:
                 ussr.append(exec(stre))

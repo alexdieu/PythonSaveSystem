@@ -1,9 +1,14 @@
 from reader import taker
 from creator import save
 
-print("SIMPLE EXAMPLE")
+a = 45
 
-a = 24
+b = "WHAT"
+
+c = ["carrots", "rabbits"]
 
 save(a, "dat", 0)
+save(b, "dat", 1)
+save(c, "dat", 1)
+
 print(taker("dat"))
